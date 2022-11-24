@@ -1,0 +1,10 @@
+.text {
+    color: darkred;
+    text-align: center;
+    font-size: 100px;
+}
+from{
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}

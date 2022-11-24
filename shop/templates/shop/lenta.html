@@ -1,0 +1,21 @@
+{% extends 'shop/main.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+<div class="row">
+    {% for i in data %}
+    <div class="col-sm-3">
+        <div id="card">
+            <a href="{% url 'lenta_page' i.id %}"><img src="{{ i.image.url }}" class="card-img"></a>
+              <div class="text-card">
+                  <h5>{{ i.name }}</h5>
+                  <p>{{ i.email }}</p>
+              </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

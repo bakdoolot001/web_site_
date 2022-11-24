@@ -1,0 +1,40 @@
+{% extends 'shop/main.html' %}
+{% load static %}
+
+{% block title %}{% endblock %}
+
+
+
+{% block content %}
+<header class="header">
+    <span class="logo">О себе</span>
+</header>
+
+      <div class="hero">
+        <div class="container hero__container">
+          <div class="hero__about">
+            <h1 class="hero__title">BackEnd-разработчик</h1>
+            <h2 class="hero__subtitle">Бакөөлөт Эргешов</h2>
+            <p class="hero__description">
+              Привет, я занимаюсь версткой адаптивных сайтов по макету. Пишите для сотрудничества.
+            </p>
+
+
+            <div class="hero__links">
+              <a class="hero__link" href="#" target="_blank"><i class='bx bxl-vk'></i></a>
+              <a class="hero__link" href="#"><i class='bx bxl-facebook'></i></a>
+              <a class="hero__link" href="#"><i class='bx bxl-instagram'></i></a>
+              <a class="hero__link" href="#"><i class='bx bxl-pinterest'></i></a>
+            </div>
+
+
+          </div>
+
+          <div class="hero__box">
+            <img class="hero__box-img" src="{% static 'shop/images/avatar.png' %}">
+          </div>
+
+        </div>
+
+      </div>
+{% endblock %}
